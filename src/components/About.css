@@ -1,0 +1,83 @@
+.about-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about-grid {
+  display: grid;
+  gap: 2rem; /* Adjust gap as needed */
+  align-items: center; /* Vertically align items */
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1.5fr 1fr; /* Text on left (1.5 parts), image on right (1 part) */
+  }
+}
+
+.about-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem; /* Add some space below title */
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 1.5rem;
+  }
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: flex-start; /* Align image to the left */
+  align-items: center;
+}
+
+.about-portrait {
+  width: auto; /* Allow width to adjust based on height */
+  max-width: 250px; /* Limit image size */
+  height: 100%; /* Take full height of container */
+  max-height: 300px; /* Limit max height to prevent overflow */
+  border-radius: 0.5rem; /* Slightly rounded corners */
+  object-fit: cover; /* Cover the area, crop if necessary */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-text {
+  color: #404040;
+}
+
+html.dark .about-text {
+  color: #d4d4d4;
+}
+
+.about-text .font-medium {
+  font-weight: 500;
+}
+
+.skills-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #525252;
+  list-style-type: none;
+}
+
+html.dark .skills-list {
+  color: #a3a3a3;
+}
+
+.skill-item {
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  background-color: #e0e7ff; /* Light indigo */
+  color: #4338ca; /* Dark indigo */
+  font-weight: 500;
+}
+
+html.dark .skill-item {
+  background-color: #3730a3; /* Darker indigo */
+  color: #c7d2fe; /* Lighter indigo */
+}

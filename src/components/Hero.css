@@ -1,0 +1,98 @@
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
+  width: calc(100% + 6rem);
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  background-image: radial-gradient(60% 40% at 50% 0%, rgba(99, 102, 241, 0.06), transparent 60%);
+}
+
+html.dark .hero-gradient {
+  background-image: radial-gradient(60% 40% at 50% 0%, rgba(99, 102, 241, 0.12), transparent 60%);
+}
+
+.hero-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+.hero-bio {
+  max-width: 42rem;
+  color: #404040;
+}
+
+html.dark .hero-bio {
+  color: #d4d4d4;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.button-primary {
+  border-radius: 0.75rem;
+  background-color: #4f46e5;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.button-primary:hover {
+  background-color: #6366f1;
+}
+
+.button-secondary {
+  border-radius: 0.75rem;
+  border: 1px solid #d4d4d4;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.button-secondary:hover {
+  background-color: #f5f5f5;
+}
+
+html.dark .button-secondary {
+  border-color: #404040;
+}
+
+html.dark .button-secondary:hover {
+  background-color: #2a2a2a;
+}
+
+.hero-section .container {
+  padding: 0 2rem;
+}

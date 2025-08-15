@@ -1,0 +1,21 @@
+.icon-link {
+  border-radius: 0.5rem;
+  border: 1px solid #d4d4d4;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.icon-link:hover {
+  background-color: #f5f5f5;
+}
+
+html.dark .icon-link {
+  border-color: #404040;
+}
+
+html.dark .icon-link:hover {
+  background-color: #2a2a2a;
+}
